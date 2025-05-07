@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AutoTracker"
+        tools:targetApi="31">
+
+        <!-- MainActivity as the launcher/splash screen -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AutoTracker">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- HomeActivity for the main menu -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:label="Home"
+            android:theme="@style/Theme.AutoTracker" />
+
+        <!-- VehiclesActivity -->
+        <activity
+            android:name=".VehiclesActivity"
+            android:exported="true"
+            android:label="Vehicles"
+            android:theme="@style/Theme.AutoTracker" />
+
+        <!-- AddVehicleActivity -->
+        <activity
+            android:name=".AddVehicleActivity"
+            android:exported="true"
+            android:label="Add Vehicle"
+            android:theme="@style/Theme.AutoTracker" />
+        <activity
+            android:name=".ViewVehiclesActivity"
+            android:exported="true"
+            android:label="View Vehicles"
+            android:theme="@style/Theme.AutoTracker" />
+
+
+        <!-- SettingsActivity -->
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="true"
+            android:label="Settings"
+            android:theme="@style/Theme.AutoTracker" />
+
+        <!-- PlaceholderActivity -->
+        <activity
+            android:name=".PlaceholderActivity"
+            android:exported="true"
+            android:label="Placeholder"
+            android:theme="@style/Theme.AutoTracker" />
+
+
+        <!-- CarDetailsActivity -->
+        <activity
+            android:name=".CarDetailsActivity"
+            android:exported="true"
+            android:label="Car Details"
+            android:theme="@style/Theme.AutoTracker" />
+        <!-- HistoryActivity -->
+        <activity
+            android:name=".ServicesActivity"
+            android:exported="true"
+            android:label="Services"
+            android:theme="@style/Theme.AutoTracker" />
+        <!-- NewServiceActivity -->
+        <activity
+            android:name=".NewServiceActivity"
+            android:exported="true"
+            android:label="Add New Service"
+            android:theme="@style/Theme.AutoTracker" />
+
+        <!-- ViewServicesActivity -->
+        <activity
+            android:name=".ViewServicesActivity"
+            android:exported="true"
+            android:label="View Services"
+            android:theme="@style/Theme.AutoTracker" />
+
+    </application>
+</manifest>
